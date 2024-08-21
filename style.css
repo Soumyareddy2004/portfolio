@@ -1,0 +1,242 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+      "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  }
+  
+  body {
+    background-color: black;
+    color: white;
+  }
+  
+  .About {
+    animation: slideTop 1s ease forwards;
+    padding: 30px 6% 0;
+  }
+  .home {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    animation: slideRight 2s ease forwards;
+  }
+  .home-content h3 {
+    font-size: 40px;
+    font-weight: 700;
+    margin: -2px 0;
+  }
+  .home-content h4 {
+    font-size: 30px;
+    font-weight: 300;
+  }
+  .home-content h4 span {
+    color: rgb(130, 21, 239);
+  }
+  .butt {
+    font-size: 24px;
+    font-weight: 300;
+    border-radius: 50px;
+    margin: 1% 12px;
+    color: white;
+    border: 2px solid rgb(147, 72, 201);
+    background-color: rgb(138, 40, 173);
+    box-shadow: 0 0 50px rgb(175, 84, 218);
+    animation: slideRight 2s ease forwards;
+  }
+  
+  .social-media a svg {
+    margin: 1% 12px;
+    border: 2px solid rgb(61, 202, 250);
+    box-shadow: 0 0 40px rgb(225, 49, 232);
+    border-radius: 50%;
+    background: transparent;
+    animation: slideRight 2s ease forwards;
+  }
+  
+  .home-img img {
+    animation: slideRight 1s ease forwards;
+  }
+  
+  @keyframes slideRight {
+    0% {
+      transform: translateX(-100px);
+      opacity: 0;
+    }
+    100% {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+  
+  @keyframes slideTop {
+    0% {
+      transform: translateY(300px);
+      opacity: 0;
+    }
+    100% {
+      transform: translateY(0px);
+      opacity: 1;
+    }
+  }
+  
+  .AboutMe {
+    padding: 30px 2% 0;
+    animation: slideTop 1s ease forwards;
+  }
+  
+  .AboutMe h1,
+  .Projects-section h1,
+  .Skills-section h1,
+  .Connect-section h1 {
+    background-color: rgb(169, 65, 248);
+    box-shadow: 0 0 20px rgb(113, 76, 234);
+    border-radius: 12px;
+    text-align: center;
+  }
+  .carousel-items {
+    padding: 20px 1% 0;
+    text-align: justify;
+  }
+  .carousel-items h3 {
+    text-align: center;
+  }
+  .carousel-items img {
+    border-radius: 8px;
+    margin-left: 40%;
+    width: 100px;
+    height: 80px;
+  }
+  
+  .project-items {
+    padding: 20px 1% 0;
+    text-align: justify;
+  }
+  .heading {
+    animation: slideRight 2s ease forwards;
+  }
+  .project-items h3 {
+    text-align: center;
+  }
+  .project-items p,
+  .project-items li,
+  .project-items h5 {
+    animation: slideRight 2s ease forwards;
+  }
+  @media screen and (max-width: 480px) {
+    .home {
+      flex-direction: column;
+    }
+    .home-img {
+      order: -1;
+    }
+    .project-items img {
+      border-radius: 8px;
+      margin-left: 12%;
+      width: 300px;
+      height: 200px;
+    }
+    .Skills-section img {
+      border-radius: 12px;
+      width: 80px;
+      height: 80px;
+    }
+    .Connect-section div {
+      margin-left: 3%;
+    }
+  }
+  .Skills-section ul {
+    list-style-type: none;
+    display: flex;
+  }
+  
+  @media screen and (min-width: 480px) and (max-width: 799px) {
+    .project-items img {
+      border-radius: 8px;
+      margin-left: 8%;
+      width: 600px;
+      height: 260px;
+    }
+    .butt2 {
+      margin-left: 42%;
+    }
+    .Skills-section img {
+      border-radius: 12px;
+      width: 80px;
+      height: 80px;
+    }
+    .Skills-section ul {
+      list-style-type: none;
+      display: flex;
+    }
+    .Connect-section div {
+      margin-left: 20%;
+    }
+  }
+  
+  @media screen and (min-width: 800px) and (max-width: 1000px) {
+    .project-items img {
+      border-radius: 8px;
+      margin-left: 10%;
+      width: 700px;
+      height: 360px;
+    }
+    .butt2 {
+      margin-left: 42%;
+    }
+    .Skills-section img {
+      border-radius: 12px;
+      width: 80px;
+      height: 80px;
+    }
+    .Skills-section ul {
+      list-style-type: none;
+      display: flex;
+    }
+    .Connect-section div {
+      margin-left: 28%;
+    }
+  }
+  
+  @media screen and (min-width: 1000px) {
+    .project-items img {
+      border-radius: 8px;
+      margin-left: 10%;
+      width: 900px;
+      height: 260px;
+    }
+    .butt2 {
+      margin-left: 42%;
+    }
+    .Skills-section img {
+      border-radius: 12px;
+      width: 80px;
+      height: 80px;
+    }
+    .Skills-section ul {
+      list-style-type: none;
+      display: flex;
+    }
+    .Connect-section div {
+      margin-left: 35%;
+    }
+  }
+  .Projects-section {
+    animation: slideTop 1s ease forwards;
+  }
+  .Skills-section {
+    animation: slideTop 1s ease forwards;
+  }
+  .AboutMe {
+    animation: slideTop 1s ease forwards;
+  }
+  .Skills-section li {
+    margin-left: 2%;
+  }
+  #propic{
+    border-radius: 50%;
+    border: 1px solid rgb(82, 150, 246);
+    box-shadow: 0 0 40px rgb(27, 186, 230);
+  }
