@@ -8,7 +8,7 @@
 }
 
 body {
-  background-color: rgb(6, 7, 21);
+  background-color: rgb(3, 4, 12);
   color: white;
 }
 @keyframes slideRight {
@@ -135,24 +135,6 @@ hr {
   color: #1e90ff;
 }
 
-.skill-card::before {
-  content: '';
-  position: absolute;
-  width: 200%;
-  height: 200%;
-  background: rgba(255, 255, 255, 0.05);
-  top: -100%;
-  left: -100%;
-  transform: rotate(45deg);
-  transition: 0.6s;
-}
-
-.skill-card:hover::before {
-  top: 100%;
-  left: 100%;
-}
-
-/* Home Section */
 .home {
   display: flex;
   flex-direction: row;
@@ -324,4 +306,34 @@ h3{
   border-radius: 50%;
   border: 1px solid rgb(82, 150, 246);
   box-shadow: 0 0 40px rgb(27, 186, 230);
+}
+@keyframes float {
+  0% {
+      transform: translateY(0);
+  }
+  50% {
+      transform: translateY(-10px);
+  }
+  100% {
+      transform: translateY(0);
+  }
+}
+
+.floating-text {
+  animation: float 3s ease-in-out infinite;
+}
+@keyframes float {
+  0% {
+      transform: translateY(0);
+  }
+  50% {
+      transform: translateY(-10px);
+  }
+  100% {
+      transform: translateY(0);
+  }
+}
+
+.floating-text {
+  animation: float 3s ease-in-out infinite;
 }
