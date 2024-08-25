@@ -73,10 +73,7 @@ var typed = new Typed(".multiple-text", {
   }
   
   function resume() {
-    open(
-      "https://drive.google.com/file/d/1z8xWH8bqZRC793IJaqV7FufLixMWcUoj/view?usp=sharing"
-      
-    );
+    open("https://drive.google.com/file/d/1z8xWH8bqZRC793IJaqV7FufLixMWcUoj/view?usp=sharing");
   }
 
   
