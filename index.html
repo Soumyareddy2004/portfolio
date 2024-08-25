@@ -194,126 +194,134 @@
             />
           </svg>
         </a>
-        <button class="btn butt" onclick="resume()">Download Resume</button>
+        <button class="btn butt" onclick="resume()">View My Resume</button>
       </div>
     </section>
 
     <section class="AboutMe">
-      <div
-        id="carouselExampleAutoplaying"
-        class="carousel slide"
-        data-bs-ride="carousel"
-      >
-        <div class="carousel-inner">
-          <div class="carousel-item active carousel-items"> 
-            <h1>Experience</h1>
-            <hr />
-            <h5>Google AI&ML virtual internship (JUL 2024 - Present)</h5>
-            <p>AICTE-EduSkills Virtual Internship.</p>
-            <img src="./images/aicte.png" alt="DesiQnA Logo" />
-            <ul>
-              <li>
-                neural networks with TensorFlow
-              </li>
-              <li>
-                object detection,product image search
-              </li>
-              <li>
-                image classification
-              </li>
-            </ul>
-            <hr />
-            <!-- <h5>Data Science Intern - CodeClause (JUN 2023 - JUL 2023)</h5>
-            <img src="./Images/codeclause.jpg" alt="codeclause Logo" />
-            <ul>
-              <li>
-                Analysed large datasets to uncover insights, trends, and
-                patterns using Python, R, SQL and Tableau.
-              </li>
-              <li>
-                Implemented supervised and unsupervised learning algorithms for
-                classification tasks including clustering and anomaly detection.
-              </li>
-              <li>
-                Conducted data analysis on 10,000+ user reviews and 50,000+
-                ratings to identify key features for the recommendation
-                algorithm; achieved 90% accuracy in predicting user preferences.
-              </li>
-            </ul> -->
+      <h1 class="text-center">Experience</h1>
+      <br>
+      <br><br><br>
+      <div class="container">
+          <div class="row">
+              <!-- Google AI & ML Virtual Internship Flashcard -->
+              <div class="col-md-6 mb-4">
+                  <div class="card flashcard">
+                    <img src="./images/aicte.png" style="height:100px;width:100px" class="card-img-top" alt="Oasis Infobyte Logo">
+                      <div class="card-body">
+                          <h5 class="card-title">Google AI & ML Virtual Internship (July 2024 - Present)</h5>
+                          <p class="card-text">AICTE-EduSkills Virtual Internship.</p>
+                          <ul>
+                              <li>Neural networks with TensorFlow</li>
+                              <li>Object detection, product image search</li>
+                              <li>Image classification</li>
+                          </ul>
+                      </div>
+                  </div>
+              </div>
+  
+              <!-- Java Development Intern - Oasis Infobyte Flashcard -->
+              <div class="col-md-6 mb-4">
+                  <div class="card flashcard">
+                      <img src="./images/oasis.jpg" style="height:100px;width:100px" class="card-img-top" alt="Oasis Infobyte Logo">
+                      <div class="card-body">
+                          <h5 class="card-title">Java Development Intern - Oasis Infobyte (Aug 2024 - Sep 2024)</h5>
+                          <ul>
+                              <li>Developed a comprehensive ticket booking system, including features for user authentication, ticket reservations, and cancellations.</li>
+                              <li>Designed and implemented a user-friendly ATM interface for simulating basic banking transactions, including withdrawals, deposits, and balance inquiries.</li>
+                          </ul>
+                      </div>
+                  </div>
+              </div>
           </div>
-          <div class="carousel-item carousel-items">
-            <h1>Education</h1>
-            <hr />
+      </div>
+  </section>
+  
+  
+  <section class="AboutMe">
+    <h1 class="text-center">Education</h1>
+    <hr />
+    <br>
+    <br><br>
+    <br>
+    <div class="container">
+        <div class="education-card">
             <h3>CVR College of Engineering - (2022-2026)</h3>
-            <img src="./images/cvrlogo.jpg" alt="cvr-logo" />
+            <img src="./images/cvrlogo.jpg" alt="CVR Logo" class="college-logo" />
             <ul>
-              <li>Bachelor of Technology in Computer Science Machine Learning</li>
-              <li>CGPA : 9.52/10</li>
-              <li>
-                <ul>
-                  <h6>Course Works</h6>
-                  <li>Advanced Data Structures through java</li>
-                  <li>Design and Analysis of Algorithms</li>
-                  <li>Operating System</li>
-                  <li>Database Management Systems</li>
-                  <li>Devops</li>
-                  <li>Python for Programming</li>
-                  <li>Computer Networks</li>
-                  <li>Machine Learning</li>
-                </ul>
-              </li>
+                <li>Bachelor of Technology in Computer Science (Machine Learning)</li>
+                <li>CGPA: 9.52/10</li>
+                <li>
+                    <h6>Coursework</h6>
+                    <ul>
+                        <li>Advanced Data Structures through Java</li>
+                        <li>Design and Analysis of Algorithms</li>
+                        <li>Operating Systems</li>
+                        <li>Database Management Systems</li>
+                        <li>DevOps</li>
+                        <li>Python for Programming</li>
+                        <li>Computer Networks</li>
+                        <li>Machine Learning</li>
+                    </ul>
+                </li>
             </ul>
-          </div>
-          <button
-            class="carousel-control-prev"
-            type="button"
-            data-bs-target="#carouselExampleAutoplaying"
-            data-bs-slide="prev"
-          >
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Previous</span>
-          </button>
-          <button
-            class="carousel-control-next"
-            type="button"
-            data-bs-target="#carouselExampleAutoplaying"
-            data-bs-slide="next"
-          >
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Next</span>
-          </button>
+        </div>
+    </div>
+</section>
+<hr />
+
+    
+    <section id="Skills" class="skills-section">
+      <h1>Skills</h1>
+          <hr/> 
+          <br>
+          <br><br><br>
+      <div class="skills-cards-container">
+        <!-- Programming Languages Card -->
+
+        <div class="skill-card">
+          <h4>Programming Languages</h4>
+          <ul>
+            <li><img src="./images/java.jpg" alt="Java" /><span>Java</span></li>
+            <li><img src="./images/py.png" alt="Python" /><span>Python</span></li>
+            <li><img src="./images/c.png" alt="C" /><span>C</span></li>
+            <li><img src="./images/js.png" alt="JavaScript" /><span>JavaScript</span></li>
+          </ul>
+        </div>
+    
+        <!-- Technologies Card -->
+        <div class="skill-card">
+          <h4>Technologies</h4>
+          <ul>
+            <li><img src="./images/rea.png" alt="ReactJS" /><span>ReactJS</span></li>
+            <li><img src="./images/node.png" alt="NodeJS" /><span>NodeJS</span></li>
+            <li><img src="./images/ex.png" alt="ExpressJS" /><span>ExpressJS</span></li>
+            <li><img src="./images/fire.png" alt="Firebase" /><span>Firebase</span></li>
+          </ul>
+        </div>
+    
+        <!-- Database Skills Card -->
+        <div class="skill-card">
+          <h4>Database Skills</h4>
+          <ul>
+            <li><img src="./images/mongo.png" alt="MongoDB" /><span>MongoDB</span></li>
+            <li><img src="./images/mysql.png" alt="MySQL" /><span>MySQL</span></li>
+            <li><img src="./images/git.jpg" alt="Git" /><span>Git</span></li>
+          </ul>
+        </div>
+        <div class="skill-card">
+          <h4>Domain Knowledge</h4>
+          <ul>
+            <li><img src="./images/ml.png" alt="Machine Learning" /><span>Machine Learning</span></li>
+            <li><img src="./images/DS.jpg" alt="Data science" /><span>Data Science</span></li>
+          </ul>
         </div>
       </div>
+      
     </section>
-    <hr/> 
     
-    <section id="Skills" class="Skills-section">
-      <div class="heading"><h1>Skills</h1></div>
-      <h3>Programming Languages</h3>
-      <ul>
-        <!-- <li><img src="./Images/clang.jpg" alt="" /></li> -->
-        <li><img src="./images/python.png" alt="" /></li>
-        <li><img src="./images/java.jpg" alt="" /></li>
-        <li><img src="./images/web.jpg" alt="" /></li>
-      </ul>
-      <h3>FrameWorks</h3>
-      <ul>
-        <li><img src="./images/flask.jpg" alt="" /></li>
-        <li><img src="./images/react.jpg" alt="" /></li>
-        <li><img src="./images/git.jpg" alt="" /></li>
-      </ul>
-      <h3>Data Bases</h3>
-      <ul>
-        <li><img src="./images/mysql.png" alt="" /></li>
-        <li><img src="./images/oracle.jpg" alt="" /></li>
-      </ul>
-      <h3>Domain Knowledge</h3>
-      <ul>
-        <li><img src="./Images/ml.png" alt="" /></li>
-        <li><img src="./Images/DS.jpg" alt="" /></li>
-        <!-- <li><img src="./Images/azure.png" alt="" /></li> -->
-      </ul>
-    </section>
+    
+    
     <hr />
     <!-- PROJECTS SECTION -->
     <section class="Projects-section" id="Projects">
@@ -324,10 +332,12 @@
         data-bs-ride="carousel"
       >
         <div class="carousel-inner">
+
           <div
             class="carousel-item active project-items"
             data-bs-interval="10000"
           >
+
             <h3>Productify</h3>
             <img src="./images/productify.png" alt="Blood Banking System" />
             <p>
@@ -345,35 +355,6 @@
               Project Code
             </button>
           </div>
-          <div class="carousel-item project-items" data-bs-interval="2000">
-            <h3>Movie Recommendation System</h3>
-            <img src="./Images/movie.png" alt=" Movie Recommendation System" />
-            <p>
-              This project is a movie recommendation system based on popularity.
-              It recommends movies to users based on their popularity among all
-              users. The Popularity-based Movie Recommendation system works by
-              identifying the most popular movies based on their ratings and
-              recommending them to users. The popularity of a movie is
-              determined by the number of ratings it has received from users.
-              The project utilizes a dataset that contains movie ratings
-              provided by users. Each rating consists of the movie ID, user ID,
-              and the rating value. The project focuses on analyzing the
-              popularity of movies and generating recommendations based on their
-              popularity.
-            </p>
-            <h5>Technology Stack</h5>
-            <ul>
-              <li>Tools: Machine Learning Algorithms, Power BI</li>
-              <li>Programming Languages : Python</li>
-              <li>IDE - Jupyter NoteBook</li>
-            </ul>
-            <button class="btn butt butt2" onclick="movie()">
-              Project Code
-            </button>
-            <button class="btn butt butt2" onclick="movieLive()">
-              Live Demo
-            </button>
-          </div>
           <div class="carousel-item project-items">
             <h3>Iris Flower classification System</h3>
             <img src="./Images/iris.png" alt="Iris Flower Detection System" />
@@ -383,15 +364,7 @@
               the popular Iris dataset, which contains measurements of four
               features (sepal length, sepal width, petal length, and petal
               width) for three different Iris species (Setosa, Versicolor, and
-              Virginica). The dataset consists of 150 samples, with each sample
-              having four feature values and a corresponding target label.
-              Several classification models are implemented in this project to
-              classify the Iris flowers: Decision Tree Classifier Random Forest
-              Classifier K-Nearest Neighbors (KNN) Classifier Support Vector
-              Machines (SVM) Classifier Gradient Boosting Classifier The models
-              are trained using the Iris dataset and evaluated using various
-              evaluation metrics such as accuracy, precision, recall, and
-              F1-score.
+              Virginica). 
             </p>
             <h5>Technology Stack</h5>
             <ul>
@@ -407,33 +380,7 @@
             </button>
           </div>
           <div class="carousel-item project-items">
-            <h3>Handwritten Digits Recognition</h3>
-            <img
-              src="./Images/handwritten.png"
-              alt="Handwritten Digits Recognition"
-            />
-            <p>
-              Handwritten digit recognition using MNIST dataset is a major
-              project made with the help of Neural Network. It basically detects
-              the scanned images of handwritten digits. The MNIST handwritten
-              digit classification problem is a standard dataset used in
-              computer vision and deep learning. Although the dataset is
-              effectively solved, it can be used as the basis for learning and
-              practicing how to develop, evaluate, and use convolutional deep
-              learning neural networks for image classification from scratch.
-            </p>
-            <h5>Technology Stack</h5>
-            <ul>
-              <li>Tools: Machine Learning Algorithms, Power BI</li>
-              <li>Programming Languages : Python</li>
-              <li>IDE - Google Colab</li>
-            </ul>
-            <button class="btn butt butt2" onclick="hand()">
-              Project Code
-            </button>
-          </div>
-          <div class="carousel-item project-items">
-            <h3>Tasty Plate</h3>
+            <h3>Yummy dish</h3>
             <img src="./Images/tastyplate.png" alt="Tasty Plate" />
             <p>
               Cooking is not only a work but also an art. It is not confined to
@@ -477,6 +424,14 @@
     <hr />
     <section id="Connect" class="Connect-section">
       <h1>Connect</h1>
+      <br>
+      <div style="text-align: center; max-width: 600px; margin: 0 auto;">
+      <h3 style="color: rgb(149, 242, 242);">Get In Touch</h3>
+      <br>
+      
+      <p style="color: rgb(206, 226, 244);">
+        My inbox is always open. Whether you have a question or just want to say hello, I'll try my best to get back to you!</p><br>
+      </div>
       <div class="social-media">
         <a href="https://linkedin.com/in/soumya-bodigam-054094231"
           ><svg
