@@ -303,9 +303,26 @@ h3{
   margin-bottom: 30px;
 }
 #propic{
+  width:230px;
+  height:330px;
   border-radius: 50%;
-  border: 1px solid rgb(82, 150, 246);
-  box-shadow: 0 0 40px rgb(27, 186, 230);
+  border: 1px solid rgb(214, 226, 241);
+  box-shadow: 0 0 30px rgb(221, 242, 248);
+}
+@keyframes float {
+  0% {
+      transform: translateY(0);
+  }
+  50% {
+      transform: translateY(-10px);
+  }
+  100% {
+      transform: translateY(0);
+  }
+}
+
+.floating-text {
+  animation: float 2s ease-in-out infinite;
 }
 @keyframes float {
   0% {
@@ -322,18 +339,31 @@ h3{
 .floating-text {
   animation: float 3s ease-in-out infinite;
 }
-@keyframes float {
+
+
+
+@keyframes slideLeftRight {
   0% {
-      transform: translateY(0);
+    transform: translateX(0);
   }
   50% {
-      transform: translateY(-10px);
+    transform: translateX(20px);
   }
   100% {
-      transform: translateY(0);
+    transform: translateX(0);
   }
 }
 
-.floating-text {
-  animation: float 3s ease-in-out infinite;
+/* Image style */
+.home-img img {
+  border-radius: 50%;
+  /* box-shadow: 0px 15px 15px aliceblue; */
+  transition: transform 1.5s ease-in-out, box-shadow 0.5s ease-in-out;
+  animation: slideLeftRight 5s infinite ease-in-out; /* Slide animation */
+}
+
+/* Hover effect: scaling, shadow color change */
+.home-img img:hover {
+  transform: scale(1.1); /* Scale the image on hover */
+  /* box-shadow: 0px 15px 30px aliceblue; Blue shadow on hover */
 }
