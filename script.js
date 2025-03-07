@@ -74,6 +74,6 @@ var typed = new Typed(".multiple-text", {
   
  function resume() {
     // open("https://drive.google.com/file/d/1z8xWH8bqZRC793IJaqV7FufLixMWcUoj/view?usp=sharing");
-    window.location.href='soumyaresumenew.pdf';
+    window.location.href='SoumyaReddy-resume.pdf';
   }
   
