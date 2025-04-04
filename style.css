@@ -190,6 +190,18 @@ hr {
   padding: 30px 2% 0;
   animation: slideTop 1s ease forwards;
 }
+.carousel-fade .carousel-item {
+  transition: opacity 1s ease-in-out;
+}
+.project-items {
+  padding: 20px;
+  transition: all 0.5s ease-in-out;
+}
+.carousel-item img {
+  max-height: 300px;
+  object-fit: contain;
+  border-radius: 10px;
+}
 
 .carousel-items,
 .project-items {

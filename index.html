@@ -288,27 +288,47 @@
         id="carouselExampleInterval"
         class="carousel slide"
         data-bs-ride="carousel"
+        data-bs-interval="5000"
       >
         <div class="carousel-inner">
 
           <div
-            class="carousel-item active project-items"
-            data-bs-interval="10000"
-          >
-
+            class="carousel-item active project-items">
+          <h3>No Poverty</h3>
+          <img src="./Images/nopoverty.png" alt="No Poverty Monitoring System" />
+          <p>
+            No Poverty is an AI-driven platform that identifies and addresses poverty-prone areas by analyzing real-time data, satellite imagery, and socio-economic indicators. It bridges the gap by connecting people with nearby NGOs, government welfare programs, and job opportunities. The platform offers real-time eligibility checks and step-by-step guidance for accessing aid. By leveraging AI and APIs like Gemini, No Poverty ensures that resources are directed efficiently, empowering communities and driving impactful, data-driven poverty eradication efforts.
+          </p>
+          <h5>Technology Stack</h5>
+          <ul>
+            <li>Framework: Django (Python)</li>
+            <li>Database: SQLite</li>
+            <li>Languages: Python, HTML, CSS</li>
+            <li>IDE: VS Code</li>
+          </ul>
+          <button class="btn butt butt2" onclick="noPovertyCode()">
+            Project Code
+          </button>
+          <button class="btn butt butt2" onclick="noPovertyLive()">
+            Live Demo
+          </button>
+          </div>
+          <div class="carousel-item project-items">
             <h3>Productify</h3>
             <img src="./images/productify.png" alt="Blood Banking System" />
             <p>
-              Developed a comprehensive platform for creating, optimizing, and promoting product landing pages using HTML,
-              CSS, and JavaScript.”Productify” is an E-commerce website,it has an intuitive user interface and robust backend infrastructure,
-              improving product presentation and marketing strategies.
+              Productify is a full-stack E-commerce platform built with the MERN stack (MongoDB, Express.js, React.js, Node.js). 
+              It enables users to create, customize, and optimize high-quality product landing pages to boost online visibility and sales.
+              With a sleek React-based frontend and a powerful Express.js/Node.js backend, the platform supports dynamic product management,
+              secure transactions, and scalable integration for modern digital businesses.
             </p>
             <h5>Technology Stack</h5>
             <ul>
-              <li>HTML ,CSS ,Reactjs</li>
-              <li>IDE - VS code</li>
-              <li>Data Base : MongoDB</li>
-            </ul>
+              <li>Frontend: React.js</li>
+              <li>Backend: Node.js & Express.js</li>
+              <li>Database: MongoDB</li>
+              <li>IDE: Visual Studio Code</li>
+            </ul>            
             <button class="btn butt butt2" onclick="productify()">
               Project Code
             </button>
@@ -333,31 +353,55 @@
             <button class="btn butt butt2" onclick="iris()">
               Project Code
             </button>
-            <button class="btn butt butt2" onclick="irisLive()">
+            <!-- <button class="btn butt butt2" onclick="irisLive()">
               Live Demo
-            </button>
+            </button> -->
           </div>
-          <!-- <div class="carousel-item project-items">
-            <h3>Yummy dish</h3>
-            <img src="./Images/tastyplate.png" alt="Tasty Plate" />
+          <div class="carousel-item project-items">
+            <h3>Edu Orbit - Collaborative Learning Platform</h3>
+            <img src="./Images/eduorbit.png" alt="Edu Orbit Learning Platform" />
             <p>
-              Cooking is not only a work but also an art. It is not confined to
-              anything it can be learnt by anyone who definitely wants to and
-              that is only possible when you have a right guide to help you
-              learn it. Welcome to Tasty Plate, our website provides you a
-              platform to learn and cook popular cuisines across all countries.
-              We provide a beginner friendly cooking processes that helps you to
-              learn making your favourite dish.
+              Edu Orbit is a collaborative, personalized, and gamified learning platform designed to revolutionize the way students engage with online education.
+              Built using the MERN stack, it creates a dynamic space for students to participate in group discussions, take AI-powered quizzes,
+              receive smart learning recommendations, and share profiles and educational resources. With real-time features and progress tracking,
+              Edu Orbit ensures an immersive and efficient learning experience.
             </p>
             <h5>Technology Stack</h5>
             <ul>
-              <li>Languages : HTML, CSS, Java Script</li>
-              <li>IDE - Visual Studio Code</li>
+              <li>Frontend: React.js</li>
+              <li>Backend: Node.js & Express.js</li>
+              <li>Database: MongoDB</li>
+              <li>Authentication & Real-time: JWT, WebSockets</li>
             </ul>
-            <button class="btn butt butt2" onclick="tastyPlate()">
+            <button class="btn butt butt2" onclick="eduOrbitCode()">
               Project Code
             </button>
-          </div> -->
+            <button class="btn butt butt2" onclick="eduOrbitLive()">
+              Live Demo
+            </button>
+          </div>
+          <div class="carousel-item project-items">
+            <h3>GeoVision – Satellite Image Analysis & Classification System</h3>
+            <img src="./Images/geovision.png" alt="GeoVision Satellite Analysis Platform" />
+            <p>
+              GeoVision is a geospatial intelligence platform built with Django that analyzes and classifies satellite imagery using advanced machine learning and remote sensing APIs.
+              The system integrates Copernicus, Sentinel Hub, and Google Earth Engine APIs to fetch real-time satellite data and detect changes in land cover, urban expansion, and environmental risks.
+              With automated classification pipelines and a user-friendly dashboard, GeoVision empowers researchers and environmental agencies to make data-driven decisions on climate and terrain analysis.
+            </p>
+            <h5>Technology Stack</h5>
+            <ul>
+              <li>Framework: Django (Python)</li>
+              <li>APIs: Sentinel Hub, Google Earth Engine, Copernicus</li>
+              <li>Libraries: TensorFlow, OpenCV, GeoPandas</li>
+              <li>Tools: Jupyter Notebook, Visual Studio Code</li>
+            </ul>
+            <button class="btn butt butt2" onclick="geoVisionCode()">
+              Project Code
+            </button>
+            <button class="btn butt butt2" onclick="geoVisionLive()">
+              Live Demo
+            </button>
+          </div>          
         </div>
         <button
           class="carousel-control-prev"
