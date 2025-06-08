@@ -62,34 +62,51 @@ var typed = new Typed(".multiple-text", {
   function blood() {
     open("");
   }
-  function iris() {
+  function iriscode() {
     open("https://github.com/Soumyareddy2004/irisflowerdetectiion");
   }
   function irisLive() {
     open("");
   }
-  function productify() {
+  function prodcode() {
     open("https://github.com/Soumyareddy2004/productify");
   }
-  function noPovertyCode() {
+  function prodlive() {
+    open("https://productify-i4cq.onrender.com/");
+  }
+  function povertycode() {
     window.open("https://github.com/Soumyareddy2004/No-Poverty", "_blank");
   }
-  function eduOrbitCode() {
+  function povertylive() {
+    window.open("https://no-poverty.onrender.com/tweet/", "_blank");
+  }
+  function agricode() {
+    window.open("https://github.com/Soumyareddy2004/AgriVerse", "_blank");
+  }
+  
+  function agrilive() {
+    window.open("https://eduorbit-front.onrender.com/", "_blank"); 
+  }
+  function wellcode() {
     window.open("https://github.com/Soumyareddy2004/EduOrbit", "_blank");
   }
   
-  function eduOrbitLive() {
+  function welllive() {
     window.open("https://eduorbit-front.onrender.com/", "_blank"); 
   }
-  
-  function noPovertyLive() {
-    window.open("https://no-poverty.onrender.com/tweet/", "_blank");
+  function educode() {
+    window.open("https://github.com/Soumyareddy2004/EduOrbit", "_blank");
   }
-  function geoVisionCode() {
+  
+  function edulive() {
+    window.open("https://eduorbit-frontend.onrender.com/", "_blank"); 
+  }
+  
+  function geocode() {
     window.open("https://github.com/YourUsername/geovision", "_blank");
   }
   
-  function geoVisionLive() {
+  function geolive() {
     window.open("https://your-live-link.com/geovision", "_blank");
   }
  function resume() {

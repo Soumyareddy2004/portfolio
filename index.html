@@ -1,10 +1,9 @@
-
 <!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Soumya Bodigam</title>
+    <title>Soumya Bodigam - Software Developer</title>
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -19,516 +18,752 @@
       href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
       rel="stylesheet"
     />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.10.0/font/bootstrap-icons.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="./style.css" />
   </head>
   <body>
-    <header>
-      <div class="px-3 py-2 text-bg-dark border-bottom">
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top glass-nav">
         <div class="container">
-          <div
-            class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start"
-          >
-            <a
-              href="./index.html"
-              class="d-flex align-items-center my-2 my-lg-0 me-lg-auto text-white text-decoration-none"
-            >
-              <img
-                src="./images/passphoto.jpg"
-                alt="mdo"
-                width="30"
-                height="30"
-                class="rounded-circle"
-              />
-              Soumya Reddy Bodigam
+            <a class="navbar-brand" href="#home">
+                <!-- <div class="code-symbol">&lt;/&gt;</div> -->
+                <span class="brand-text">Soumya Reddy</span>
             </a>
-            <ul
-              class="nav col-12 col-lg-auto my-2 justify-content-center my-md-0 text-small"
+            <button
+                class="navbar-toggler"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#navbarNav"
             >
-              <li>
-                <a href="#About" class="nav-link text-secondary">
-                 
-                  About Me
-                </a>
-              </li>
-              <li>
-                <a href="#Projects" class="nav-link text-white">
-                 
-                  Projects
-                </a>
-              </li>
-              <li>
-                <a href="#Skills" class="nav-link text-white">
-                 
-                  Skills
-                </a>
-              </li>
-              <li>
-                <a href="#Connect" class="nav-link text-white">
-                
-                  Connect
-                </a>
-              </li>
-            </ul>
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link nav-link-custom active" href="#home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link nav-link-custom" href="#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link nav-link-custom" href="#skills">Skills</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link nav-link-custom" href="#projects">Projects</a>
+                    </li>
+                    <!-- <li class="nav-item">
+                        <a class="nav-link nav-link-custom" href="#certificates">Certificates</a>
+                    </li> -->
+                    <li class="nav-item">
+                        <a class="nav-link nav-link-custom" href="#connect">Connect</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero-section">
+      <div class="grid-background"></div>
+      <div class="container">
+        <div class="row align-items-center min-vh-100">
+          <div class="col-lg-6">
+            <div class="hero-content">
+              <h4 class="hero-greeting">Hello, I'm</h4>
+              <h1 class="hero-name">Soumya Reddy Bodigam</h1>
+              <h3 class="hero-role">
+                And I'm passionate about
+                <span class="multiple-text">Frontend Development</span>
+              </h3>
+              <p class="hero-description">
+                Pre-Final Year Computer Science Engineering Student specializing in AI & ML.
+                Passionate about creating innovative solutions through code.
+              </p>
+              <div class="hero-buttons">
+                <button class="btn btn-primary-custom me-3" target="_blank" onclick="resume()">
+                  <i></i>View Resume
+                </button>
+                <a href="#projects"><button class="btn btn-outline-custom" href="#projects">
+                  <i class="bi bi-arrow-down me-2" ></i>Explore Work
+                </button></a>
+              </div>
+              <div class="social-links">
+  <a href="https://www.linkedin.com/in/soumya-bodigam-054094231/" class="social-link" target="_blank" rel="noopener noreferrer">
+    <i class="bi bi-linkedin"></i>
+  </a>
+  <a href="https://github.com/Soumyareddy2004" class="social-link" target="_blank" rel="noopener noreferrer">
+    <i class="bi bi-github"></i>
+  </a>
+  <a href="https://leetcode.com/u/SoumyaReddy1911/" class="social-link" target="_blank" rel="noopener noreferrer">
+    <i class="bi bi-code-square"></i>
+  </a>
+  <a href="https://wa.me/+918919247619" class="social-link" target="_blank" rel="noopener noreferrer">
+    <i class="bi bi-whatsapp"></i>
+  </a>
+</div>
+
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <div class="hero-image">
+              <div class="image-frame">
+                <img
+                  src="./images/propic.jpg"
+                  alt="Soumya Reddy Bodigam"
+                  class="profile-image"
+                />
+              </div>
+            </div>
           </div>
         </div>
       </div>
-    </header>
-
-    <section class="About" id="About">
-      <div class="home">
-        <div class="home-content">
-          <h4>Hello I'm</h4>
-          <h3>Soumya Reddy Bodigam</h3>
-          <h4>
-            And I'm good at
-            <span class="multiple-text">FrontEnd Development</span>
-          </h4>
-        </div>
-        <div class="home-img">
-          <img
-            src="./images/propic.jpg"
-            id="propic"
-            alt="Profile pic"
-            height="300px"
-            style="border-radius: 0%"
-          />
-        </div>
-      </div>
-      
-        <p style="max-width: 800px; margin: 0; font-size: 16px;color: rgb(207, 225, 243);" class="floating-text">
-            I'm a Pre-Final Year Computer Science Engineering Student. I am pursuing my bachelor's in the field of Computer Science Engineering (AI&ML) (2022-2026). My current CGPA is 9.5 out of 10. Primarily interested in Web Development, Machine Learning, Programming with Java, Data Structures & Algorithms.
-        </p>
-    <br>
-    
-        <p style="max-width: 600px; margin: 0; font-size: 16px;color: rgb(187, 251, 253);" class="floating-text">
-            Through hard work and learning, I pave the way for my growth.
-        </p>
-    
-    <br><br><br>
-      <div class="social-media">
-        <a href="https://www.linkedin.com/in/soumya-bodigam-054094231/"
-          ><svg
-            xmlns="http://www.w3.org/2000/svg"
-            width="40"
-            height="40"
-            fill="rgb(120, 102, 200)"
-            class="bi bi-linkedin"
-            viewBox="0 0 16 16"
-          >
-            <path
-              d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854zm4.943 12.248V6.169H2.542v7.225zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248S2.4 3.226 2.4 3.934c0 .694.521 1.248 1.327 1.248zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016l.016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225z"
-            />
-          </svg>
-        </a>
-        <a href="https://github.com/Soumyareddy2004"
-          ><svg
-            xmlns="http://www.w3.org/2000/svg"
-            width="40"
-            height="40"
-            fill="rgb(120, 102, 200)"
-            class="bi bi-github"
-            viewBox="0 0 16 16"
-          >
-            <path
-              d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8"
-            />
-          </svg>
-        </a>
-        <a href="https://leetcode.com/u/SoumyaReddy1911/"
-          ><svg
-            xmlns="http://www.w3.org/2000/svg"
-            width="40"
-            height="40"
-            fill="rgb(120, 102, 200)"
-            class="bi bi-code-square"
-            viewBox="0 0 16 16"
-          >
-            <path
-              d="M14 1a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1zM2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2z"
-            />
-            <path
-              d="M6.854 4.646a.5.5 0 0 1 0 .708L4.207 8l2.647 2.646a.5.5 0 0 1-.708.708l-3-3a.5.5 0 0 1 0-.708l3-3a.5.5 0 0 1 .708 0m2.292 0a.5.5 0 0 0 0 .708L11.793 8l-2.647 2.646a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 0 0-.708 0"
-            />
-          </svg>
-        </a>
-        <button class="btn butt" onclick="resume()">View My Resume</button>
-      </div>
-      <br><br><br>
     </section>
 
-    <section class="AboutMe">
-      <h1 class="text-center">Experience</h1>
-      <br>
-      <br><br><br>
-      <div class="container">
-          <div class="row">
-              <!-- Google AI & ML Virtual Internship Flashcard -->
-              <div class="col-md-6 mb-4">
-                  <div class="card flashcard">
-                    <img src="./images/aicte.png" style="height:100px;width:100px" class="card-img-top" alt="Oasis Infobyte Logo">
-                      <div class="card-body">
-                          <h5 class="card-title">Google AI & ML Virtual Internship (July 2024 - Present)</h5>
-                          <p class="card-text">AICTE-EduSkills Virtual Internship.</p>
-                          <ul>
-                              <li>Neural networks with TensorFlow</li>
-                              <li>Object detection, product image search</li>
-                              <li>Image classification</li>
-                          </ul>
-                      </div>
-                  </div>
+    <!-- About Section -->
+    <section id="about" class="about-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">About Me</h2>
+                <div class="section-subtitle">Get to know me better</div>
+            </div>
+             <!-- Education -->
+        <div class="subsection-header">
+          <h3>Education</h3>
+        </div>
+        <div class="glass-card education-card">
+          <div class="row align-items-center">
+            <div class="col-md-2">
+              <img src="./images/cvrlogo.jpg" alt="CVR College" class="college-logo" />
+            </div>
+            <div class="col-md-10">
+              <h4>CVR College of Engineering</h4>
+              <p class="education-degree">Bachelor of Technology in CSE(AI&ML)</p>
+              <p class="education-duration">2022 - 2026 | CGPA: 9.5/10</p>
+              <div class="coursework">
+                <h6>Key Coursework:</h6>
+                <div class="coursework-tags">
+                  <span class="tag">Data Structures & Algorithms</span>
+                  <span class="tag">Web Technologies</span>
+                  <span class="tag">Machine Learning</span>
+                  <span class="tag">Artificial Intelligence</span>
+                  <span class="tag">Neural Networks</span>
+                  <span class="tag">Deep Learning</span>
+                  <span class="tag">Data Analytics</span>
+                  <span class="tag">Computer Networking</span>
+                  <span class="tag">Database Management</span>
+                  <span class="tag">Operating Systems</span>
+                  <span class="tag">OOPS</span>
+                  <span class="tag">DevOps</span>
+                </div>
               </div>
-  
-              <!-- Java Development Intern - Oasis Infobyte Flashcard -->
-              <div class="col-md-6 mb-4">
-                  <div class="card flashcard">
-                      <img src="./images/oasis.jpg" style="height:100px;width:100px" class="card-img-top" alt="Oasis Infobyte Logo">
-                      <div class="card-body">
-                          <h5 class="card-title">Java Development Intern - Oasis Infobyte (Aug 2024 - Sep 2024)</h5>
-                          <ul>
-                              <li>Developed a comprehensive ticket booking system, including features for user authentication, ticket reservations, and cancellations.</li>
-                              <li>Designed and implemented a user-friendly ATM interface for simulating basic banking transactions, including withdrawals, deposits, and balance inquiries.</li>
-                          </ul>
-                      </div>
-                  </div>
-              </div>
+            </div>
           </div>
+        </div>
+            <!-- Experience Cards -->
+            <div class="subsection-header">
+                <h3>Achievements</h3>
+            </div>
+            <div class="row mb-5">
+                <!-- Achievement 1 -->
+                <div class="col-md-6 mb-4">
+                    <div class="glass-card experience-card">
+                        <div class="card-content">
+                            <h5 class="card-title">Secured 1st place in CBIT SUDHEE Hackathon</h5>
+                            <p class="card-subtitle">March 01, 2025</p>
+                            <p>Conducted by Chaitanya Bharati Institute of Technology</p>
+                            <img src="images\win2.jpg" alt="AI & ML Hackathon Winner" class="card-image">
+                            <p class="card-text">Developed an AI-powered satellite image analysis and classification system to enhance geospatial insights for environmental monitoring, urban planning, and sustainability.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Achievement 2 -->
+                <div class="col-md-6 mb-4">
+                    <div class="glass-card experience-card">
+                        <div class="card-content">
+                            <h5 class="card-title">Won 3rd prize at Solutions Challenge Hackathon</h5>
+                            <p class="card-subtitle">February 10, 2025</p>
+                            <p>Organized by GDGC-CVR College of Engineering</p>
+                            <img src="images\win1.jpg" alt="Solutions Challenge 3rd Place" class="card-image">
+                            <p class="card-text">Designed an innovative solution leveraging technology to address poverty-related challenges through data-driven insights.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Achievement 3 -->
+<div class="col-md-6 mb-4">
+    <div class="glass-card experience-card">
+        <div class="card-content">
+            <h5 class="card-title">Hackcelerate 2025 Grand Finale</h5>
+            <p class="card-subtitle">May 31, 2025</p>
+            <p class="card-text">
+                Selected among the <span class="rank-highlight">Top 16 finalist teams</span> out of 
+                <span class="rank-highlight">441 teams</span> nationwide. <br>
+                Participated in the prestigious grand finale at the <span class="rank-highlight">Microsoft India Development Center (IDC)</span>, 
+                Hyderabad, organized by the Entrepreneurship Cell, MJCET.
+            </p>
+        </div>
+    </div>
+</div>
+
+<!-- Achievement 4 -->
+<div class="col-md-6 mb-4">
+    <div class="glass-card experience-card">
+        <div class="card-content">
+            <h5 class="card-title">Competitive Programming Milestones</h5>
+            <p class="card-subtitle">2024 – 2025</p>
+            <div class="card-text">
+                <p>
+                    <strong>CodeChef Starters 157 (Rated)</strong> – October 23, 2024<br>
+                    Achieved a global rank of <span class="rank-highlight">#322</span> among thousands of participants.
+                </p>
+                <p>
+                    <strong>LeetCode Highlights</strong><br>
+                    Ranked in the <span class="rank-highlight">Top 16%</span> globally with 
+                    <span class="rank-highlight">3 achievement badges</span> earned for consistent performance.
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+
+</div>
+
+       
       </div>
-  </section>
-  
-  
-  <section class="AboutMe">
-    <h1 class="text-center">Education</h1>
-    <hr />
-    <br>
-    <br><br>
-    <br>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Technical Skills</h2>
+                <div class="section-subtitle">Tools and technologies I work with</div>
+            </div>
+            <div class="row">
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <div class="skill-card glass-card">
+                        <div class="skill-icon">
+                            <i class="bi bi-code-slash"></i>
+                        </div>
+                        <h4>Programming Languages</h4>
+                        <div class="skills-list">
+                            <div class="skill-item">
+                                <div class="skill-item-icon java-icon">
+                                    <i class="fab fa-java"></i>
+                                </div>
+                                <span>Java</span>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-item-icon python-icon">
+                                    <i class="fab fa-python"></i>
+                                </div>
+                                <span>Python</span>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-item-icon c-icon">
+                                    <i class="fas fa-code"></i>
+                                </div>
+                                <span>C</span>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-item-icon js-icon">
+                                    <i class="fab fa-js-square"></i>
+                                </div>
+                                <span>JavaScript</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <div class="skill-card glass-card">
+                        <div class="skill-icon">
+                            <i class="bi bi-gear"></i>
+                        </div>
+                        <h4>Technologies/Frameworks</h4>
+                        <div class="skills-list">
+                            <div class="skill-item">
+                                <div class="skill-item-icon react-icon">
+                                    <i class="fab fa-react"></i>
+                                </div>
+                                <span>ReactJS</span>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-item-icon node-icon">
+                                    <i class="fab fa-node-js"></i>
+                                </div>
+                                <span>NodeJS</span>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-item-icon express-icon">
+                                    <i class="fas fa-server"></i>
+                                </div>
+                                <span>ExpressJS</span>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-item-icon django-icon">
+                                    <i class="fab fa-python"></i>
+                                </div>
+                                <span>Django</span>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-item-icon flask-icon">
+                                    <i class="fas fa-flask"></i>
+                                </div>
+                                <span>Flask</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <div class="skill-card glass-card">
+                        <div class="skill-icon">
+                            <i class="bi bi-database"></i>
+                        </div>
+                        <h4>Database & Tools</h4>
+                        <div class="skills-list">
+                            <div class="skill-item">
+                                <div class="skill-item-icon mongo-icon">
+                                    <i class="fas fa-leaf"></i>
+                                </div>
+                                <span>MongoDB</span>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-item-icon mysql-icon">
+                                    <i class="fas fa-database"></i>
+                                </div>
+                                <span>MySQL</span>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-item-icon firebase-icon">
+                                    <i class="fas fa-fire"></i>
+                                </div>
+                                <span>Firebase</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <div class="skill-card glass-card">
+                        <div class="skill-icon">
+                            <i class="bi bi-brain"></i>
+                        </div>
+                        <h4>Domain Knowledge</h4>
+                        <div class="skills-list">
+                            <div class="skill-item">
+                                <div class="skill-item-icon ml-icon">
+                                    <i class="fas fa-robot"></i>
+                                </div>
+                                <span>Machine Learning</span>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-item-icon ds-icon">
+                                    <i class="fas fa-chart-line"></i>
+                                </div>
+                                <span>Data Analytics</span>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-item-icon ai-icon">
+                                    <i class="fas fa-brain"></i>
+                                </div>
+                                <span>Artificial Intelligence</span>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-item-icon dl-icon">
+                                    <i class="fas fa-network-wired"></i>
+                                </div>
+                                <span>Deep Learning</span>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-item-icon nn-icon">
+                                    <i class="fas fa-project-diagram"></i>
+                                </div>
+                                <span>Neural Networks</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+<section id="projects" class="projects-section">
     <div class="container">
-        <div class="education-card">
-            <h3>CVR College of Engineering - (2022-2026)</h3>
-            <img src="./images/cvrlogo.jpg" alt="CVR Logo" class="college-logo" />
-            <ul>
-                <li>Bachelor of Technology in Computer Science (Machine Learning)</li>
-                <li>CGPA: 9.52/10</li>
-                <li>
-                    <h6>Coursework</h6>
-                    <ul>
-                        <li>Advanced Data Structures through Java</li>
-                        <li>Design and Analysis of Algorithms</li>
-                        <li>Operating Systems</li>
-                        <li>Database Management Systems</li>
-                        <li>DevOps</li>
-                        <li>Python for Programming</li>
-                        <li>Computer Networks</li>
-                        <li>Machine Learning</li>
-                    </ul>
-                </li>
-            </ul>
+        <div class="section-header">
+            <h2 class="section-title">Featured Projects</h2>
+            <div class="section-subtitle">Showcasing my latest work and innovations</div>
+        </div>
+        <div id="projectsCarousel" class="carousel slide project-carousel" data-bs-ride="carousel" data-bs-interval="6000">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#projectsCarousel" data-bs-slide-to="0" class="active" aria-current="true"></button>
+                <button type="button" data-bs-target="#projectsCarousel" data-bs-slide-to="1"></button>
+                <button type="button" data-bs-target="#projectsCarousel" data-bs-slide-to="2"></button>
+                <button type="button" data-bs-target="#projectsCarousel" data-bs-slide-to="3"></button>
+                <button type="button" data-bs-target="#projectsCarousel" data-bs-slide-to="4"></button>
+                <button type="button" data-bs-target="#projectsCarousel" data-bs-slide-to="5"></button>
+                <button type="button" data-bs-target="#projectsCarousel" data-bs-slide-to="6"></button>
+            </div>
+            <div class="carousel-inner">
+                <!-- Project 1: No Poverty -->
+                <div class="carousel-item active">
+                    <div class="project-slide">
+                        <div class="project-background">
+                            <img src="images\nopoverty.png" alt="No Poverty Project" class="project-bg-image" />
+                            <div class="project-overlay"></div>
+                        </div>
+                        <div class="project-content">
+                            <div class="project-info">
+                                <h3 class="project-title">No Poverty</h3>
+                                <p class="project-description">
+                                    AI-driven platform that identifies poverty-prone areas using real-time data, satellite imagery, and socio-economic indicators. Connects people with NGOs, government programs, and job opportunities.
+                                </p>
+                                <div class="tech-stack">
+                                    <span class="tech-tag">Django</span>
+                                    <span class="tech-tag">Python</span>
+                                    <span class="tech-tag">SQLite</span>
+                                    <span class="tech-tag">AI/ML</span>
+                                </div>
+                                <div class="project-buttons">
+                                    <button class="btn btn-primary-custom me-2" onclick="povertycode()">
+                                        <i class="bi bi-code-slash me-1"></i>View Code
+                                    </button>
+                                    <button class="btn btn-outline-custom" onclick="povertylive()">
+                                        <i class="bi bi-eye me-1"></i>Live Demo
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Project 2: AgriVerse -->
+                <div class="carousel-item">
+                    <div class="project-slide">
+                        <div class="project-background">
+                            <img src="images\agri.jpg" alt="AgriVerse Project" class="project-bg-image" />
+                            <div class="project-overlay"></div>
+                        </div>
+                        <div class="project-content">
+                            <div class="project-info">
+                                <h3 class="project-title">AgriVerse</h3>
+                                <p class="project-description">
+                                   A platform that leverages technology to empower farmers with real-time agricultural insights, smart farming tools, and market connectivity for improved productivity and sustainability.
+                                </p>
+                                <div class="tech-stack">
+                                    <span class="tech-tag">Django</span>
+                                    <span class="tech-tag">React.js</span>
+                                    <span class="tech-tag">AR & VR</span>
+                                    <span class="tech-tag">Clerk</span>
+                                </div>
+                                <div class="project-buttons">
+                                    <button class="btn btn-primary-custom me-2" onclick="agricode()">
+                                        <i class="bi bi-code-slash me-1"></i>View Code
+                                    </button>
+                                    <!-- <button class="btn btn-outline-custom" onclick="agrilive()">
+                                        <i class="bi bi-eye me-1"></i>Live Demo
+                                    </button> -->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Project 3: WellSync -->
+                <div class="carousel-item">
+                    <div class="project-slide">
+                        <div class="project-background">
+                            <img src="images\wellsync.jpg" alt="WellSync Project" class="project-bg-image" />
+                            <div class="project-overlay"></div>
+                        </div>
+                        <div class="project-content">
+                            <div class="project-info">
+                                <h3 class="project-title">WellSync</h3>
+                                <p class="project-description">
+                                    WellSync is an AI-powered mental wellness platform that integrates facial emotion recognition, journaling sentiment analysis, and intelligent recommendations to support users' emotional health in real-time.
+                                </p>
+                                <div class="tech-stack">
+                                    <span class="tech-tag">React.js</span>
+                                    <span class="tech-tag">Flask</span>
+                                    <span class="tech-tag">Virtual Reality</span>
+                                    <span class="tech-tag">OpenCV</span>
+                                </div>
+                                <div class="project-buttons">
+                                    <!-- <button class="btn btn-primary-custom me-2" onclick="wellcode()">
+                                        <i class="bi bi-code-slash me-1"></i>View Code
+                                    </button>
+                                    <button class="btn btn-outline-custom" onclick="welllive()">
+                                        <i class="bi bi-eye me-1"></i>Live Demo
+                                    </button> -->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                 <!-- Project 4: GeoVision -->
+                <div class="carousel-item">
+                    <div class="project-slide">
+                        <div class="project-background">
+                            <img src="images\geo.jpg" alt="GeoVision Project" class="project-bg-image" />
+                            <div class="project-overlay"></div>
+                        </div>
+                        <div class="project-content">
+                            <div class="project-info">
+                                <h3 class="project-title">GeoVision</h3>
+                                <p class="project-description">
+                                    Satellite image analysis platform using Django and ML APIs. Analyzes land cover changes, urban expansion, and environmental risks with real-time satellite data.
+                                </p>
+                                <div class="tech-stack">
+                                    <span class="tech-tag">Django</span>
+                                    <span class="tech-tag">TensorFlow</span>
+                                    <span class="tech-tag">Google Earth Engine</span>
+                                    <span class="tech-tag">OpenCV</span>
+                                </div>
+                                <div class="project-buttons">
+                                    <!-- <button class="btn btn-primary-custom me-2" onclick="geocode()">
+                                        <i class="bi bi-code-slash me-1"></i>View Code
+                                    </button>
+                                    <button class="btn btn-outline-custom" onclick="geolive()">
+                                        <i class="bi bi-eye me-1"></i>Live Demo
+                                    </button> -->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Project 5: Edu Orbit -->
+                <div class="carousel-item">
+                    <div class="project-slide">
+                        <div class="project-background">
+                            <img src="images\edu.jpg" alt="Edu Orbit Project" class="project-bg-image" />
+                            <div class="project-overlay"></div>
+                        </div>
+                        <div class="project-content">
+                            <div class="project-info">
+                                <h3 class="project-title">Edu Orbit</h3>
+                                <p class="project-description">
+                                    Collaborative learning platform with gamified features. Includes group discussions, AI-powered quizzes, smart recommendations, and real-time progress tracking.
+                                </p>
+                                <div class="tech-stack">
+                                    <span class="tech-tag">React.js</span>
+                                    <span class="tech-tag">Node.js</span>
+                                    <span class="tech-tag">MongoDB</span>
+                                    <span class="tech-tag">WebSockets</span>
+                                </div>
+                                <div class="project-buttons">
+                                    <button class="btn btn-primary-custom me-2" onclick="educode()">
+                                        <i class="bi bi-code-slash me-1"></i>View Code
+                                    </button>
+                                    <button class="btn btn-outline-custom" onclick="edulive()">
+                                        <i class="bi bi-eye me-1"></i>Live Demo
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Project 6: Productify -->
+                <div class="carousel-item">
+                    <div class="project-slide">
+                        <div class="project-background">
+                            <img src="images\productify.png" alt="Productify Project" class="project-bg-image" />
+                            <div class="project-overlay"></div>
+                        </div>
+                        <div class="project-content">
+                            <div class="project-info">
+                                <h3 class="project-title">Productify</h3>
+                                <p class="project-description">
+                                    Full-stack E-commerce platform built with MERN stack. Enables users to create, customize, and optimize high-quality product landing pages for better online visibility and sales.
+                                </p>
+                                <div class="tech-stack">
+                                    <span class="tech-tag">React.js</span>
+                                    <span class="tech-tag">Node.js</span>
+                                    <span class="tech-tag">Express.js</span>
+                                    <span class="tech-tag">MongoDB</span>
+                                </div>
+                                <div class="project-buttons">
+                                    <button class="btn btn-primary-custom me-2" onclick="prodcode()">
+                                        <i class="bi bi-code-slash me-1"></i>View Code
+                                    </button>
+                                    <button class="btn btn-outline-custom" onclick="prodlive()">
+                                        <i class="bi bi-eye me-1"></i>Live Demo
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 7: Iris Classification -->
+                <div class="carousel-item">
+                    <div class="project-slide">
+                        <div class="project-background">
+                            <img src="images\iris.png" alt="Iris Classification Project" class="project-bg-image" />
+                            <div class="project-overlay"></div>
+                        </div>
+                        <div class="project-content">
+                            <div class="project-info">
+                                <h3 class="project-title">Iris Flower Classification</h3>
+                                <p class="project-description">
+                                    Machine learning system that classifies Iris flowers into different species based on sepal and petal measurements using advanced ML algorithms and data visualization.
+                                </p>
+                                <div class="tech-stack">
+                                    <span class="tech-tag">Python</span>
+                                    <span class="tech-tag">Flask</span>
+                                    <span class="tech-tag">Machine Learning</span>
+                                    <span class="tech-tag">Scikit-learn</span>
+                                </div>
+                                <div class="project-buttons">
+                                    <button class="btn btn-primary-custom me-2" onclick="iriscode()">
+                                        <i class="bi bi-code-slash me-1"></i>View Code
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <button class="carousel-control-prev" type="button" data-bs-target="#projectsCarousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#projectsCarousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
         </div>
     </div>
 </section>
-<hr />
-
-    
-    <section id="Skills" class="skills-section">
-      <h1>Skills</h1>
-          <hr/> 
-          <br>
-          <br><br><br>
-      <div class="skills-cards-container">
-        <!-- Programming Languages Card -->
-
-        <div class="skill-card">
-          <h4>Programming Languages</h4>
-          <ul>
-            <li><img src="./images/java.jpg" alt="Java" /><span>Java</span></li>
-            <li><img src="./images/py.png" alt="Python" /><span>Python</span></li>
-            <li><img src="./images/c.png" alt="C" /><span>C</span></li>
-            <li><img src="./images/js.png" alt="JavaScript" /><span>JavaScript</span></li>
-          </ul>
+    <!-- Certificates Section -->
+    <!-- <section id="certificates" class="certificates-section">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">Certifications</h2>
+          <div class="section-subtitle">Professional achievements and recognitions</div>
         </div>
-    
-        <!-- Technologies Card -->
-        <div class="skill-card">
-          <h4>Technologies</h4>
-          <ul>
-            <li><img src="./images/rea.png" alt="ReactJS" /><span>ReactJS</span></li>
-            <li><img src="./images/node.png" alt="NodeJS" /><span>NodeJS</span></li>
-            <li><img src="./images/ex.png" alt="ExpressJS" /><span>ExpressJS</span></li>
-            <li><img src="./images/fire.png" alt="Firebase" /><span>Firebase</span></li>
-          </ul>
-        </div>
-    
-        <!-- Database Skills Card -->
-        <div class="skill-card">
-          <h4>Database Skills</h4>
-          <ul>
-            <li><img src="./images/mongo.png" alt="MongoDB" /><span>MongoDB</span></li>
-            <li><img src="./images/mysql.png" alt="MySQL" /><span>MySQL</span></li>
-            <li><img src="./images/git.jpg" alt="Git" /><span>Git</span></li>
-          </ul>
-        </div>
-        <div class="skill-card">
-          <h4>Domain Knowledge</h4>
-          <ul>
-            <li><img src="./images/ml.png" alt="Machine Learning" /><span>Machine Learning</span></li>
-            <li><img src="./images/DS.jpg" alt="Data science" /><span>Data Science</span></li>
-          </ul>
+        <div class="row">
+          <div class="col-lg-4 col-md-6 mb-4">
+            <div class="certificate-card glass-card">
+              <div class="certificate-icon">
+                <i class="bi bi-award"></i>
+              </div>
+              <h5 class="certificate-title">Machine Learning Fundamentals</h5>
+              <p class="certificate-description">Comprehensive course covering ML algorithms and implementation</p>
+              <button class="btn btn-outline-custom certificate-link" onclick="openCertificate('cert1')">
+                <i class="bi bi-link-45deg me-1"></i>View Certificate
+              </button>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 mb-4">
+            <div class="certificate-card glass-card">
+              <div class="certificate-icon">
+                <i class="bi bi-code-square"></i>
+              </div>
+              <h5 class="certificate-title">Full Stack Web Development</h5>
+              <p class="certificate-description">End-to-end web development with modern frameworks</p>
+              <button class="btn btn-outline-custom certificate-link" onclick="openCertificate('cert2')">
+                <i class="bi bi-link-45deg me-1"></i>View Certificate
+              </button>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 mb-4">
+            <div class="certificate-card glass-card">
+              <div class="certificate-icon">
+                <i class="bi bi-database"></i>
+              </div>
+              <h5 class="certificate-title">Database Management Systems</h5>
+              <p class="certificate-description">Advanced database design and optimization techniques</p>
+              <button class="btn btn-outline-custom certificate-link" onclick="openCertificate('cert3')">
+                <i class="bi bi-link-45deg me-1"></i>View Certificate
+              </button>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 mb-4">
+            <div class="certificate-card glass-card">
+              <div class="certificate-icon">
+                <i class="bi bi-cloud"></i>
+              </div>
+              <h5 class="certificate-title">Cloud Computing Essentials</h5>
+              <p class="certificate-description">Cloud infrastructure and deployment strategies</p>
+              <button class="btn btn-outline-custom certificate-link" onclick="openCertificate('cert4')">
+                <i class="bi bi-link-45deg me-1"></i>View Certificate
+              </button>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 mb-4">
+            <div class="certificate-card glass-card">
+              <div class="certificate-icon">
+                <i class="bi bi-graph-up"></i>
+              </div>
+              <h5 class="certificate-title">Data Science & Analytics</h5>
+              <p class="certificate-description">Statistical analysis and data visualization techniques</p>
+              <button class="btn btn-outline-custom certificate-link" onclick="openCertificate('cert5')">
+                <i class="bi bi-link-45deg me-1"></i>View Certificate
+              </button>
+            </div>
+          </div>
         </div>
       </div>
-      
-    </section>
-    
-    
-    
-    <hr />
-    <!-- PROJECTS SECTION -->
-    <section class="Projects-section" id="Projects">
-      <div class="heading"><h1>Projects</h1></div>
-      <div
-        id="carouselExampleInterval"
-        class="carousel slide"
-        data-bs-ride="carousel"
-        data-bs-interval="5000"
-      >
-        <div class="carousel-inner">
+    </section> -->
 
-          <div
-            class="carousel-item active project-items">
-          <h3>No Poverty</h3>
-          <img src="./Images/nopoverty.png" alt="No Poverty Monitoring System" />
-          <p>
-            No Poverty is an AI-driven platform that identifies and addresses poverty-prone areas by analyzing real-time data, satellite imagery, and socio-economic indicators. It bridges the gap by connecting people with nearby NGOs, government welfare programs, and job opportunities. The platform offers real-time eligibility checks and step-by-step guidance for accessing aid. By leveraging AI and APIs like Gemini, No Poverty ensures that resources are directed efficiently, empowering communities and driving impactful, data-driven poverty eradication efforts.
-          </p>
-          <h5>Technology Stack</h5>
-          <ul>
-            <li>Framework: Django (Python)</li>
-            <li>Database: SQLite</li>
-            <li>Languages: Python, HTML, CSS</li>
-            <li>IDE: VS Code</li>
-          </ul>
-          <button class="btn butt butt2" onclick="noPovertyCode()">
-            Project Code
-          </button>
-          <button class="btn butt butt2" onclick="noPovertyLive()">
-            Live Demo
-          </button>
-          </div>
-          <div class="carousel-item project-items">
-            <h3>Productify</h3>
-            <img src="./images/productify.png" alt="Blood Banking System" />
-            <p>
-              Productify is a full-stack E-commerce platform built with the MERN stack (MongoDB, Express.js, React.js, Node.js). 
-              It enables users to create, customize, and optimize high-quality product landing pages to boost online visibility and sales.
-              With a sleek React-based frontend and a powerful Express.js/Node.js backend, the platform supports dynamic product management,
-              secure transactions, and scalable integration for modern digital businesses.
-            </p>
-            <h5>Technology Stack</h5>
-            <ul>
-              <li>Frontend: React.js</li>
-              <li>Backend: Node.js & Express.js</li>
-              <li>Database: MongoDB</li>
-              <li>IDE: Visual Studio Code</li>
-            </ul>            
-            <button class="btn butt butt2" onclick="productify()">
-              Project Code
-            </button>
-          </div>
-          <div class="carousel-item project-items">
-            <h3>Iris Flower classification System</h3>
-            <img src="./Images/iris.png" alt="Iris Flower Detection System" />
-            <p>
-              Iris Classification aims to classify Iris flowers into different
-              species based on their sepal and petal measurements. It utilizes
-              the popular Iris dataset, which contains measurements of four
-              features (sepal length, sepal width, petal length, and petal
-              width) for three different Iris species (Setosa, Versicolor, and
-              Virginica). 
-            </p>
-            <h5>Technology Stack</h5>
-            <ul>
-              <li>Tools: Machine Learning Algorithms, Power BI</li>
-              <li>Programming Languages : Python</li>
-              <li>IDE - Jupyter NoteBook</li>
-            </ul>
-            <button class="btn butt butt2" onclick="iris()">
-              Project Code
-            </button>
-            <!-- <button class="btn butt butt2" onclick="irisLive()">
-              Live Demo
-            </button> -->
-          </div>
-          <div class="carousel-item project-items">
-            <h3>Edu Orbit - Collaborative Learning Platform</h3>
-            <img src="./Images/eduorbit.png" alt="Edu Orbit Learning Platform" />
-            <p>
-              Edu Orbit is a collaborative, personalized, and gamified learning platform designed to revolutionize the way students engage with online education.
-              Built using the MERN stack, it creates a dynamic space for students to participate in group discussions, take AI-powered quizzes,
-              receive smart learning recommendations, and share profiles and educational resources. With real-time features and progress tracking,
-              Edu Orbit ensures an immersive and efficient learning experience.
-            </p>
-            <h5>Technology Stack</h5>
-            <ul>
-              <li>Frontend: React.js</li>
-              <li>Backend: Node.js & Express.js</li>
-              <li>Database: MongoDB</li>
-              <li>Authentication & Real-time: JWT, WebSockets</li>
-            </ul>
-            <button class="btn butt butt2" onclick="eduOrbitCode()">
-              Project Code
-            </button>
-            <button class="btn butt butt2" onclick="eduOrbitLive()">
-              Live Demo
-            </button>
-          </div>
-          <div class="carousel-item project-items">
-            <h3>GeoVision – Satellite Image Analysis & Classification System</h3>
-            <img src="./Images/geovision.png" alt="GeoVision Satellite Analysis Platform" />
-            <p>
-              GeoVision is a geospatial intelligence platform built with Django that analyzes and classifies satellite imagery using advanced machine learning and remote sensing APIs.
-              The system integrates Copernicus, Sentinel Hub, and Google Earth Engine APIs to fetch real-time satellite data and detect changes in land cover, urban expansion, and environmental risks.
-              With automated classification pipelines and a user-friendly dashboard, GeoVision empowers researchers and environmental agencies to make data-driven decisions on climate and terrain analysis.
-            </p>
-            <h5>Technology Stack</h5>
-            <ul>
-              <li>Framework: Django (Python)</li>
-              <li>APIs: Sentinel Hub, Google Earth Engine, Copernicus</li>
-              <li>Libraries: TensorFlow, OpenCV, GeoPandas</li>
-              <li>Tools: Jupyter Notebook, Visual Studio Code</li>
-            </ul>
-            <button class="btn butt butt2" onclick="geoVisionCode()">
-              Project Code
-            </button>
-            <button class="btn butt butt2" onclick="geoVisionLive()">
-              Live Demo
-            </button>
-          </div>          
+    <!-- Connect Section -->
+    <section id="connect" class="connect-section">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">Let's Connect</h2>
+          <div class="section-subtitle">Ready to collaborate? Let's build something amazing together</div>
         </div>
-        <button
-          class="carousel-control-prev"
-          type="button"
-          data-bs-target="#carouselExampleInterval"
-          data-bs-slide="prev"
-        >
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Previous</span>
-        </button>
-        <button
-          class="carousel-control-next"
-          type="button"
-          data-bs-target="#carouselExampleInterval"
-          data-bs-slide="next"
-        >
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Next</span>
-        </button>
+        <div class="row justify-content-center">
+          <div class="col-lg-8 text-center">
+            <p class="connect-description">
+              My inbox is always open. Whether you have a question, want to discuss opportunities, 
+              or just want to say hello, I'll try my best to get back to you!
+            </p>
+            <div class="social-links-large">
+              <a href="https://linkedin.com/in/soumya-bodigam-054094231" class="social-link-large linkedin">
+                <i class="bi bi-linkedin"></i>
+                <span>LinkedIn</span>
+              </a>
+              <a href="https://github.com/Soumyareddy2004" class="social-link-large github">
+                <i class="bi bi-github"></i>
+                <span>GitHub</span>
+              </a>
+              <a href="https://leetcode.com/u/SoumyaReddy1911/" class="social-link-large leetcode">
+                <i class="bi bi-code-square"></i>
+                <span>LeetCode</span>
+              </a>
+              <a href="https://wa.me/+918919247619" class="social-link-large whatsapp">
+                <i class="bi bi-whatsapp"></i>
+                <span>WhatsApp</span>
+              </a>
+              <a href="mailto:sowmyareddy1911@gmail.com" class="social-link-large email">
+                <i class="bi bi-envelope"></i>
+                <span>Email</span>
+              </a>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
-    <hr />
-    <section id="Connect" class="Connect-section">
-      <h1>Connect</h1>
-      <br>
-      <div style="text-align: center; max-width: 600px; margin: 0 auto;">
-      <h3 style="color: rgb(149, 242, 242);">Get In Touch</h3>
-      <br>
-      
-      <p style="color: rgb(206, 226, 244);">
-        My inbox is always open. Whether you have a question or just want to say hello, I'll try my best to get back to you!</p><br>
-      </div>
-      <div class="social-media">
-        <a href="https://linkedin.com/in/soumya-bodigam-054094231"
-          ><svg
-            xmlns="http://www.w3.org/2000/svg"
-            width="40"
-            height="40"
-            fill="blue"
-            class="bi bi-linkedin"
-            viewBox="0 0 16 16"
-          >
-            <path
-              d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854zm4.943 12.248V6.169H2.542v7.225zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248S2.4 3.226 2.4 3.934c0 .694.521 1.248 1.327 1.248zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016l.016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225z"
-            />
-          </svg>
-        </a>
-        <a href="https://github.com/Soumyareddy1911"
-          ><svg
-            xmlns="http://www.w3.org/2000/svg"
-            width="40"
-            height="40"
-            fill="purple"
-            class="bi bi-github"
-            viewBox="0 0 16 16"
-          >
-            <path
-              d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8"
-            />
-          </svg>
-        </a>
-        <a href="https://leetcode.com/u/SoumyaReddy1911/"
-          ><svg
-            xmlns="http://www.w3.org/2000/svg"
-            width="40"
-            height="40"
-            fill="yellow"
-            class="bi bi-code-square"
-            viewBox="0 0 16 16"
-          >
-            <path
-              d="M14 1a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1zM2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2z"
-            />
-            <path
-              d="M6.854 4.646a.5.5 0 0 1 0 .708L4.207 8l2.647 2.646a.5.5 0 0 1-.708.708l-3-3a.5.5 0 0 1 0-.708l3-3a.5.5 0 0 1 .708 0m2.292 0a.5.5 0 0 0 0 .708L11.793 8l-2.647 2.646a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 0 0-.708 0"
-            />
-          </svg>
-        </a>
-        <a href="https://wa.me/+918919247619"
-          ><svg
-            xmlns="http://www.w3.org/2000/svg"
-            width="40"
-            height="40"
-            fill="rgb(87, 199, 0)"
-            class="bi bi-whatsapp"
-            viewBox="0 0 16 16"
-          >
-            <path
-              d="M13.601 2.326A7.85 7.85 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.9 7.9 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.9 7.9 0 0 0 13.6 2.326zM7.994 14.521a6.6 6.6 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.56 6.56 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592m3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.73.73 0 0 0-.529.247c-.182.198-.691.677-.691 1.654s.71 1.916.81 2.049c.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232"
-            />
-          </svg>
-        </a>
-        <a href="mailto:sowmyareddy1911@gmail.com"
-          ><svg
-            xmlns="http://www.w3.org/2000/svg"
-            width="40"
-            height="40"
-            fill="red"
-            class="bi bi-envelope-at-fill"
-            viewBox="0 0 16 16"
-          >
-            <path
-              d="M2 2A2 2 0 0 0 .05 3.555L8 8.414l7.95-4.859A2 2 0 0 0 14 2zm-2 9.8V4.698l5.803 3.546zm6.761-2.97-6.57 4.026A2 2 0 0 0 2 14h6.256A4.5 4.5 0 0 1 8 12.5a4.49 4.49 0 0 1 1.606-3.446l-.367-.225L8 9.586zM16 9.671V4.697l-5.803 3.546.338.208A4.5 4.5 0 0 1 12.5 8c1.414 0 2.675.652 3.5 1.671"
-            />
-            <path
-              d="M15.834 12.244c0 1.168-.577 2.025-1.587 2.025-.503 0-1.002-.228-1.12-.648h-.043c-.118.416-.543.643-1.015.643-.77 0-1.259-.542-1.259-1.434v-.529c0-.844.481-1.4 1.26-1.4.585 0 .87.333.953.63h.03v-.568h.905v2.19c0 .272.18.42.411.42.315 0 .639-.415.639-1.39v-.118c0-1.277-.95-2.326-2.484-2.326h-.04c-1.582 0-2.64 1.067-2.64 2.724v.157c0 1.867 1.237 2.654 2.57 2.654h.045c.507 0 .935-.07 1.18-.18v.731c-.219.1-.643.175-1.237.175h-.044C10.438 16 9 14.82 9 12.646v-.214C9 10.36 10.421 9 12.485 9h.035c2.12 0 3.314 1.43 3.314 3.034zm-4.04.21v.227c0 .586.227.8.581.8.31 0 .564-.17.564-.743v-.367c0-.516-.275-.708-.572-.708-.346 0-.573.245-.573.791"
-            />
-          </svg>
-        </a>
 
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-content">
+          <p>Designed & Developed by Soumya Reddy</p>
+        </div>
       </div>
-    </div>
-    <br><br><br>
-      
-    </section>
-  <hr>
-    <div style="text-align: center; max-width: 600px; margin: 0 auto;">
-      <p style="color: rgb(206, 226, 244);">
-        Designed and Developed by Soumya Reddy</p><br>
-      
-      </div>
+    </footer>
+
+    <!-- Scripts -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
     <script src="./script.js"></script>
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
-      crossorigin="anonymous"
-    ></script>
   </body>
 </html>
