@@ -3,7 +3,7 @@ var typed = new Typed(".multiple-text", {
       "FrontEnd Development ",
       "Backend Development",
       "Machine Learning",
-      "Data Science",
+      "Artificial Intelligence",
     ],
     typeSpeed: 100,
     backSpeed: 100,
