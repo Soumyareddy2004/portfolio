@@ -111,6 +111,6 @@ var typed = new Typed(".multiple-text", {
   }
  function resume() {
     // open("https://drive.google.com/file/d/1z8xWH8bqZRC793IJaqV7FufLixMWcUoj/view?usp=sharing");
-    window.location.href='soumya.pdf';
+    window.location.href='Soumya.pdf';
   }
   
